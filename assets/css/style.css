@@ -2438,7 +2438,7 @@ input[type="text"], input[type="email"], input[type="search"], input[type="passw
     width: 100%;
 }
 input[type="text"]:hover, input[type="email"]:hover, input[type="search"]:hover, input[type="password"]:hover, input[type="number"]:hover, textarea:hover {
-    border: 2px solid #a6a6a6;
+    border: 1px solid #a6a6a6;
 }
 input[type="text"]:focus, input[type="text"]:active, input[type="email"]:focus, input[type="email"]:active, input[type="search"]:focus, input[type="search"]:active, input[type="password"]:focus, input[type="password"]:active, input[type="number"]:focus, input[type="number"]:active, textarea:focus, textarea:active {
     -webkit-box-shadow: none;
@@ -4018,6 +4018,9 @@ input {
 .menu li a:active{
     color: #E7532E!important;
 }
+.menu li a:hover{
+    color: #E7532E!important;
+}
 .large_text{
     color: black;
     font-size: 24px;
@@ -4031,4 +4034,39 @@ input {
         margin-top: 0!important;
     }
 }
+.text_color_red{
+color: red;
+}
+.form_style{
+    background-color: #FFE6E6;
+    padding:15px 0;
+    border-top: 1px solid #CCCCCC;
+    border-bottom:1px solid #CCCCCC;
+}
+.pagelet_gap{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pagelet_divider{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid lightgray;
+}
+.li_dot_remote{
+    list-style-type: none;
+}
 
+.menu_icons a{
+    color: #fff!important;
+}
+.menu_icons a:hover{
+    color: #E7532E!important;
+}
+
+.no_margin{
+        margin-top: 0!important;
+    }
+    
+    .font_14px{
+        font-size: 14px;
+    }

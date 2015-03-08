@@ -14,7 +14,22 @@
         <link rel="stylesheet" href="assets/css/style.css" type="text/css">
         <title>FoneBox USA Pte. Ltd.</title>
         <link rel="shortcut icon" href="favicon.ico">
+        
+        <script src="assets/js/jquery-2.1.0.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        
+        <script>
+        $(function(){
+            $(".date").on('click' , function(){
+                if( $(this).children("i").hasClass('fa-arrow-right') ){
+                $(this).children("i").removeClass('fa-arrow-right').addClass('fa-arrow-down');
 
+                }else{
+                $(this).children("i").removeClass('fa-arrow-down').addClass('fa-arrow-right');
+                }
+            });
+        });
+    </script>
     </head>
 
     <body class="page-sub-page page-microsite">
@@ -54,7 +69,7 @@
                         </div>
                         <?php require_once('navigation.php'); ?>
                         <div class="social">
-                            <div class="icons">
+                            <div class="menu_icons">
                                 <a href="#"><i class="fa fa-twitter"></i></a>
                                 <a href="https://www.facebook.com/foneboxusa" target="_blank"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-pinterest"></i></a>

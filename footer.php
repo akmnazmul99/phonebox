@@ -14,11 +14,11 @@
                         <address>
                             <strong>FoneBox USA Pte. Ltd.</strong>
                             <br>
-                            <span>140, Paya Lebar Road</span>
+                            <span>140 Paya Lebar Road</span>
                             <br>
-                            <span>AZ @ Paya Lebar  #06-11,</span>
+                            <span>AZ @ Paya Lebar  #06-11</span>
                             <br>
-                            <span>Singapore – 409015.</span>
+                            <span>Singapore – 409015</span>
                             <br><br>
                             <abbr title="Telephone">Telephone:</abbr> +65 6702 4466
                             <br>
