@@ -14,13 +14,15 @@
                         <address>
                             <strong>FoneBox USA Pte. Ltd.</strong>
                             <br>
-                            <span>140 Paya Lebar Road, #03-02 AZ</span>
+                            <span>140, Paya Lebar Road</span>
                             <br>
-                            <span>Paya Lebar, Singapore 409015</span>
+                            <span>AZ @ Paya Lebar  #06-11,</span>
+                            <br>
+                            <span>Singapore – 409015.</span>
                             <br><br>
-                            <abbr title="Telephone">Telephone:</abbr> +65 XXX-XXX
+                            <abbr title="Telephone">Telephone:</abbr> +65 6702 4466
                             <br>
-                            <abbr title="Email">Email:</abbr> <a href="#">ask@fonebox.com</a>
+                            <abbr title="Email">Email:</abbr> <a href="#">ask@fonebox.com.sg</a>
                         </address>
                     </aside>
                 </div><!-- /.col-md-3 -->
@@ -83,6 +85,6 @@
 <script type="text/javascript" src="assets/js/retina-1.1.0.min.js"></script>
 
 <script type="text/javascript" src="assets/js/custom.js"></script>
-
+<script src="assets/js/flux.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

@@ -43,39 +43,42 @@
                                         <div class="controls">
                                             <label for="name">Your Name</label>
                                             <input type="text" placeholder="Name" name="name" id="name" required>
-                                        </div><!-- /.controls -->
-                                    </div><!-- /.control-group -->
-                                </div><!-- /.col-md-4 -->
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="col-md-6">
                                     <div class="input-group">
                                         <div class="controls">
                                             <label for="email">Your Email</label>
                                             <input type="email" placeholder="Email" name="email" id="email" required>
-                                        </div><!-- /.controls -->
-                                    </div><!-- /.control-group -->
-                                </div><!-- /.col-md-4 -->
-                            </div><!-- /.row -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="input-group">
                                         <div class="controls">
                                             <label for="message">Your Message</label>
                                             <textarea name="message" placeholder="Message" id="message" required></textarea>
-                                        </div><!-- /.controls -->
-                                    </div><!-- /.control-group -->
-                                </div><!-- /.col-md-4 -->
-                            </div><!-- /.row -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="pull-right">
                                 <input type="submit" class="btn btn-color-primary" id="submit" value="Send a Message">
-                            </div><!-- /.form-actions -->
+                            </div>
                             <div id="form-status"></div>
-                        </form><!-- /.footer-form -->
+                        </form>
                     </section>
-                </div><!-- /#page-main -->
-            </div><!-- /.col-md-8 -->
+                </div>
+            </div>
 
             <!--SIDEBAR Content-->
             <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-10">
+                        
                 <div id="page-sidebar" class="sidebar">
                     <aside class="news-small" id="news-small" style="margin-top: 35px;">
                         <header>
@@ -85,20 +88,24 @@
                             <address>
                                 <strong>FoneBox USA Pte. Ltd.</strong>
                                 <br>
-                                <span>140 Paya Lebar Road, #03-02 AZ</span>
+                                <span>140, Paya Lebar Road</span>
                                 <br>
-                                <span>Paya Lebar, Singapore 409015</span>
+                                <span>AZ @ Paya Lebar  #06-11,</span>
+                                <br>
+                                <span>Singapore – 409015.</span>
                                 <br><br>
-                                <abbr title="Telephone">Telephone:</abbr> +65 XXX-XXX
+                                <abbr title="Telephone" style="color: black;">Telephone:</abbr> +65 6702 4466
                                 <br>
-                                <abbr title="Email">Email:</abbr> <a href="#">ask@fonebox.com</a>
+                                <abbr title="Email">Email:</abbr> <a href="#">ask@fonebox.com.sg</a>
                             </address>
-                        </div><!-- /.section-content -->
-                    </aside><!-- /.news-small -->
-                </div><!-- /#sidebar -->
-            </div><!-- /.col-md-4 -->
-        </div><!-- /.row -->
-    </div><!-- /.container -->
+                        </div>
+                    </aside>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- end Page Content -->
 <?php require_once('footer.php'); ?>
