@@ -21,11 +21,11 @@
         <script>
         $(function(){
             $(".switch").on('click' , function(){
-                if( $(this).children().children("i").hasClass('fa-arrow-right') ){
-                $(this).children().children("i").removeClass('fa-arrow-right hide').addClass('fa-arrow-down');
+                if( $(this).find("i").hasClass('fa-arrow-right') ){
+                $(this).find("i").removeClass('fa-arrow-right').addClass('fa-arrow-down');
                  $(".point_body").removeClass('hide');
                 }else{
-                $(this).children().children("i").removeClass('fa-arrow-down').addClass('fa-arrow-right');
+                $(this).find("i").removeClass('fa-arrow-down').addClass('fa-arrow-right');
                 $(".point_body").addClass('hide');
                 }
             });
