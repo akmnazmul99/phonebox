@@ -92,37 +92,37 @@ $(window).bind('scroll', function () {
     <body class="page-sub-page page-microsite">
         <!-- Header -->
         <div class="navigation-wrapper">
-<!--            <div id="fixed_header">
-            <div class="branding ">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 col-xs-12">
-                            <a href="index.php"><img class="img-responsive" src="assets/img/logo.png" alt="brand"></a>
+            <div class="fixed_header">
+                <div class="branding ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-12">
+                                <a href="index.php"><img class="img-responsive" src="assets/img/logo_small.png" alt="brand"></a>
+                            </div>
+                            <div class="col-md-offset-5 col-md-3 col-xs-9">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <div class="col-md-1 col-xs-3">
+                                <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                            </div>
                         </div>
-                        <div class="col-md-offset-5 col-md-3 col-xs-9">
-                            <input type="text" class="form-control" placeholder="Search">
-                        </div>
-                        <div class="col-md-1 col-xs-3">
-                            <button type="submit" class="btn"><i class="fa fa-search"></i></button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-offset-8 col-md-4 col-xs-12">
-                            &nbsp;
-                            <div class="text_color_black opacity-90 mt_no" style="margin-top: -15px;">Call Us:  <span class="opacity-70">+65 6702 4466</span></div>
+                        <div class="row">
+                            <div class="col-md-offset-8 col-md-4 col-xs-12">
+                                &nbsp;
+                                <div class="text_color_black opacity-90 mt_no" style="margin-top: -15px;">Call Us:  <span class="opacity-70">+65 6702 4466</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>-->
+            
+            <div class="Padding_top"></div>
             
             
             
             
             
-            
-            
-            <div class="top_menu_container">
+<!--            <div class="top_menu_container">
                 <div class="row">
                     <div class="col-md-3 col-xs-12">
                         <a href="index.php"><img class="img-responsive nav_img" src="assets/img/logo.png" alt="brand"></a>
@@ -139,7 +139,7 @@ $(window).bind('scroll', function () {
                 </div>
             </div>
             
-<div class="padding_100p"></div>
+<div class="padding_100p"></div>-->
             
             
             
