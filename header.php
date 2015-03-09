@@ -23,10 +23,10 @@
             $(".switch").on('click' , function(){
                 if( $(this).find("i").hasClass('fa-arrow-right') ){
                 $(this).find("i").removeClass('fa-arrow-right').addClass('fa-arrow-down');
-                 $(".point_body").removeClass('hide');
+                 $(this).find(".point_body").removeClass('hide');
                 }else{
                 $(this).find("i").removeClass('fa-arrow-down').addClass('fa-arrow-right');
-                $(".point_body").addClass('hide');
+                $(this).find(".point_body").addClass('hide');
                 }
             });
         });

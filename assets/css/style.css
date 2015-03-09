@@ -4090,3 +4090,11 @@ input {
 .hide{
     display: none;
 }
+.switch_style{
+    cursor: pointer;
+}
+.point_body{
+    margin: 0 10px;
+    text-align: justify;
+    opacity:0.7;
+}
