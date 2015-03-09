@@ -46,6 +46,38 @@
         </script>-->
     <script>
     var num = 50; //number of pixels before modifying styles
+    
+    
+    $(function(){
+        $('.top_menu_container').data('size','big');
+    });
+
+    $(window).scroll(function(){
+        var $nav = $('.top_menu_container');
+        var $nav_img = $('.nav_img');
+        if ($('body').scrollTop() > 8) {
+            if ($nav.data('size') == 'big') {
+                $nav.data('size','small').stop().animate({
+                    height:'60px'
+                }, 600);
+                $nav_img.stop().animate({
+                    height:'40px'
+                }, 600);
+            }
+        } else {
+            if ($nav.data('size') == 'small') {
+                $nav.data('size','big').stop().animate({
+                    height:'100px'
+                }, 600);
+                $nav_img.stop().animate({
+                    height:'75px'
+                }, 600);
+            }  
+        }
+    });
+    
+    
+    
 
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > num) {
@@ -60,7 +92,7 @@ $(window).bind('scroll', function () {
     <body class="page-sub-page page-microsite">
         <!-- Header -->
         <div class="navigation-wrapper">
-            <div class="fixed_header">
+<!--            <div id="fixed_header">
             <div class="branding ">
                 <div class="container">
                     <div class="row">
@@ -76,14 +108,45 @@ $(window).bind('scroll', function () {
                     </div>
                     <div class="row">
                         <div class="col-md-offset-8 col-md-4 col-xs-12">
-                            <!--&nbsp;-->
+                            &nbsp;
                             <div class="text_color_black opacity-90 mt_no" style="margin-top: -15px;">Call Us:  <span class="opacity-70">+65 6702 4466</span></div>
                         </div>
                     </div>
                 </div>
             </div>
+            </div>-->
+            
+            
+            
+            
+            
+            
+            
+            <div class="top_menu_container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12">
+                        <a href="index.php"><img class="img-responsive nav_img" src="assets/img/logo.png" alt="brand"></a>
+                    </div>
+                    <div class="col-md-5 col-xs-9">
+                        <div class="pull-right">Call Us: +65 6702 4466</div>
+                    </div>
+                    <div class="col-md-3 col-xs-9">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <div class="col-md-1 col-xs-3">
+                        <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
             </div>
-            <div class="Padding_top"></div>
+            
+<div class="padding_100p"></div>
+            
+            
+            
+            
+            
+            
+            <!--<div class="Padding_top"></div>-->
             <div class="primary-navigation-wrapper">
                 <header class="navbar" id="top" role="banner">
                     <div class="container">
