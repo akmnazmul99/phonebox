@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Theme Starz">
 
-        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='assets/css/css.css' rel='stylesheet' type='text/css'>
         <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
         <link rel="stylesheet" href="assets/css/selectize.css" type="text/css">
@@ -20,16 +20,30 @@
         
         <script>
         $(function(){
-            $(".date").on('click' , function(){
-                if( $(this).children("i").hasClass('fa-arrow-right') ){
-                $(this).children("i").removeClass('fa-arrow-right').addClass('fa-arrow-down');
-
+            $(".switch").on('click' , function(){
+                if( $(this).children().children("i").hasClass('fa-arrow-right') ){
+                $(this).children().children("i").removeClass('fa-arrow-right hide').addClass('fa-arrow-down');
+                 $(".point_body").removeClass('hide');
                 }else{
-                $(this).children("i").removeClass('fa-arrow-down').addClass('fa-arrow-right');
+                $(this).children().children("i").removeClass('fa-arrow-down').addClass('fa-arrow-right');
+                $(".point_body").addClass('hide');
                 }
             });
         });
-    </script>
+        </script>
+        
+<!--        <script>
+        $(function(){
+            $(".date").on('click' , function(){
+                if( $(".point_body").hasClass('hide') ){
+                $(this).removeClass('hide');
+
+                }else{
+                $(this).addClass('hide');
+                }
+            });
+        });
+        </script>-->
     <script>
     var num = 50; //number of pixels before modifying styles
 

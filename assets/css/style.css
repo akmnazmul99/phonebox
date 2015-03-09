@@ -4084,3 +4084,9 @@ input {
     padding-top: 95px!important;
 }
 
+.expand{
+    display: block;
+}
+.hide{
+    display: none;
+}

@@ -169,11 +169,14 @@
                                 <div class="col-md-6">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <div class="universal-button framed">
-                                                <h3>Call aggregation</h3>
-                                                <figure class="date point"><i class="fa fa-arrow-right"></i></figure>
+                                            <div class="switch">
+                                                <div class="universal-button framed">
+                                                    <h3>Call aggregation</h3>
+                                                    <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                                </div>
+                                                <div class="point_body hide">FoneBox USA. Pte Ltd would like to invite you to an organizational meeting held at the International Telecoms Week (ITW) from May 10-13, 2015
+                                                </div>
                                             </div>
-                                            <p>FoneBox USA. Pte Ltd would like to invite you to an organizational meeting held at the International Telecoms Week (ITW) from May 10-13, 2015</p>
                                         </div>
                                     </div>
                                     <div class="row">
