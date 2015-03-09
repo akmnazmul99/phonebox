@@ -3,68 +3,91 @@
 <div id="page-content">
     <!-- Slider -->
     <!--    <div id="carousel-header" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="assets/img/slide-1.png" alt="slide 1" class="img-responsive" style="width: 100%">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="assets/img/slide-1.jpg" alt="slide 1" class="img-responsive" style="width: 100%">
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/slide-2.jpg" alt="slide 2" class="img-responsive"  style="width: 100%">
+                    </div>
                 </div>
-                <div class="item">
-                    <img src="assets/img/slide-2.png" alt="slide 2" class="img-responsive"  style="width: 100%">
+        
+                <style type="text/css">
+                    .tp-leftarrow											
+                    {	
+                        z-index:100;
+                        cursor:pointer; 
+                        position:absolute;	
+                        background:url(assets/img/large_left.png) no-repeat top left;	
+                        width:40px;	
+                        height:40px;   
+                        top: 50%;
+                    }
+                    .tp-rightarrow											
+                    {	
+                        z-index:100;
+                        cursor:pointer; 
+                        position:absolute;	
+                        background:url(assets/img/large_right.png) no-repeat top left;	
+                        width:40px;	
+                        height:40px;   
+                        top: 50%;  
+                    }
+        
+                </style>
+                <div class="carousel-control">
+                    <a  href="#carousel-header" role="button" data-slide="prev">
+                        <span class="glyphicon tp-leftarrow" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
                 </div>
-            </div>
-    
-            <style type="text/css">
-                .tp-leftarrow											
-                {	
-                    z-index:100;
-                    cursor:pointer; 
-                    position:absolute;	
-                    background:url(assets/img/large_left.png) no-repeat top left;	
-                    width:40px;	
-                    height:40px;   
-                    top: 50%;
-                }
-                .tp-rightarrow											
-                {	
-                    z-index:100;
-                    cursor:pointer; 
-                    position:absolute;	
-                    background:url(assets/img/large_right.png) no-repeat top left;	
-                    width:40px;	
-                    height:40px;   
-                    top: 50%;  
-                }
-    
-            </style>
-             Controls 
-            <div class="carousel-control">
-                <a  href="#carousel-header" role="button" data-slide="prev">
-                    <span class="glyphicon tp-leftarrow" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-            </div>
-            <div class="carousel-control" style="left: auto; right: 0">
-                <a href="#carousel-header" role="button" data-slide="next">
-                    <span class="glyphicon tp-rightarrow" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            
-             Indicators 
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-header" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-header" data-slide-to="1"></li>
-            </ol>
-        </div>-->
+                <div class="carousel-control" style="left: auto; right: 0">
+                    <a href="#carousel-header" role="button" data-slide="next">
+                        <span class="glyphicon tp-rightarrow" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-header" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-header" data-slide-to="1"></li>
+                </ol>
+            </div>-->
     <!-- end Slider -->
     <style type="text/css">
         .image1{
             height:100% !important;
             width: 100% !important;
         }
+
+        .carousel-control{
+            z-index: 200;
+        }
+        .carousel-indicators{
+            z-index: 200;
+        }
     </style>
-    <div  id="slider" >
+
+    <div  id="slider" style="position: relative;">
         <img src="assets/img/slide-1.jpg" alt="" class="img-responsive"/>
         <img src="assets/img/slide-2.jpg" alt="" class="img-responsive" />
+
+
+        <div class="carousel-control">
+            <a  href="#carousel-header" role="button" data-slide="prev" onclick="window.f.prev()">
+                <span class="glyphicon tp-leftarrow" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+        </div>
+        <div class="carousel-control" style="left: auto; right: 0">
+            <a href="#carousel-header" role="button" data-slide="next" onclick="window.f.next()">
+                <span class="glyphicon tp-rightarrow" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-header" class="active"></li>
+            <li data-target="#carousel-header"></li>
+        </ol>
     </div>
     <!-- Content -->
     <div class="block">
@@ -141,140 +164,155 @@
                                 FoneBox USA is the parent company of its two subsidiaries, Teleport Asia and JhiJhiTel.
                             </p>
                             <div class="row form-group"></div>
-<!--                            <p style="text-align: justify;">
-                                Teleport Asia is an international gateway company with satisfactory skills in the field
-                                of call aggregation. We are telecommunication providers with expertise in proffering the
-                                following services -
-                            </p>-->
-                            
-                            
+
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="universal-button framed">
-                                        <h3>Call aggregation</h3>
-                                        <figure class="date point"><i class="fa fa-arrow-right"></i></figure>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="universal-button framed">
+                                                <h3>Call aggregation</h3>
+                                                <figure class="date point"><i class="fa fa-arrow-right"></i></figure>
+                                            </div>
+                                            <p>FoneBox USA. Pte Ltd would like to invite you to an organizational meeting held at the International Telecoms Week (ITW) from May 10-13, 2015</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div  class="universal-button framed">
+                                                <h3>A-Z Routing</h3>
+                                                <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div  class="universal-button framed">
+                                                <h3>Route trading</h3>
+                                                <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div  class="universal-button framed">
+                                                <h3>Direct route sell</h3>
+                                                <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div  class="universal-button framed">
+                                                <h3>A-Z Call Termination</h3>
+                                                <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div  class="universal-button framed">
+                                                <h3>A-Z SMS/ MMS Routing</h3>
+                                                <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div  class="universal-button framed">
+                                                <h3>Wholesale Clearing House</h3>
+                                                <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div  class="universal-button framed">
+                                                <h3>Route exchange</h3>
+                                                <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="row form-group"></div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div  class="universal-button framed">
+                                                <h3>Pinless calling card</h3>
+                                                <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div  class="universal-button framed">
+                                                <h3>PC to Phone</h3>
+                                                <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div  class="universal-button framed">
+                                                <h3>Call Shop</h3>
+                                                <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div  class="universal-button framed">
+                                                <h3>Dialer for Android platform</h3>
+                                                <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>A-Z Call Termination</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div  class="universal-button framed">
+                                                <h3>MVNO</h3>
+                                                <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div  class="universal-button framed">
+                                                <h3>Web Phone</h3>
+                                                <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div  class="universal-button framed">
+                                                <h3>Callback</h3>
+                                                <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div  class="universal-button framed">
+                                                <h3>Dialer for iOS platform</h3>
+                                                <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>A-Z Routing</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>A-Z SMS/ MMS Routing</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                            </div><!-- /.row -->
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Route trading</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Wholesale Clearing House</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Direct route sell</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Route exchange</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div>
-                                </div>
-                            </div>
-
-<!--                            <p style="text-align: justify;">
-                                JhiJhi Tel is a premium service provider that is driven by the urge to be
-                                innovative and pledges to bring you an excellent voice experience around the
-                                world. JhiJhitel offers to its customer base the following services -
-                            </p>-->
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Pinless calling card</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>MVNO</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                            </div><!-- /.row -->
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>PC to Phone</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Web Phone</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                            </div><!-- /.row -->
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Call Shop</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Callback</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                            </div><!-- /.row -->
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Dialer for Android platform</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Dialer for iOS platform</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                            </div><!-- /.row -->
-                        </div><!-- /.section-content -->
-                    </section><!-- /.main-content -->
-                </div><!-- /.col-md-6 -->
+                        </div>
+                    </section>
+                </div>
 
                 <div class="col-md-3">
                     <section class="news-small" id="news-small">
@@ -290,16 +328,16 @@
                                     </header>
                                 </aside>
                             </article>
-<!--                            <article>
-                                <figure class="date"><i class="fa fa-file-o"></i>11-28-2014</figure>
-                                <header><a href="#">Etiam facilisis, purus eu ullamcorper ultrices,
-                                        lorem eros tincidunt mauris, quis adipiscing sapien ante quis sem.</a></header>
-                            </article>-->
-<!--                            <article>
-                                <figure class="date"><i class="fa fa-file-o"></i>12-24-2014</figure>
-                                <header><a href="#">Pellentesque habitant morbi tristique
-                                        senectus et netus et malesuada fames ac turpis egestas.</a></header>
-                            </article>-->
+                            <!--                            <article>
+                                                            <figure class="date"><i class="fa fa-file-o"></i>11-28-2014</figure>
+                                                            <header><a href="#">Etiam facilisis, purus eu ullamcorper ultrices,
+                                                                    lorem eros tincidunt mauris, quis adipiscing sapien ante quis sem.</a></header>
+                                                        </article>-->
+                            <!--                            <article>
+                                                            <figure class="date"><i class="fa fa-file-o"></i>12-24-2014</figure>
+                                                            <header><a href="#">Pellentesque habitant morbi tristique
+                                                                    senectus et netus et malesuada fames ac turpis egestas.</a></header>
+                                                        </article>-->
                         </div>
                         <div class="read-more">All News</div>
                     </section>
@@ -331,18 +369,18 @@
             <div class="modal-body" style="padding-left: 30px; text-align: justify;">
                 FoneBox USA. Pte Ltd would like to invite you to an organizational meeting held at the International Telecoms 
                 Week (ITW) from May 10-13, 2015 at the Hyatt Regency ad Swissotel in Chicago, USA. <br><br>
-                
+
                 FoneBox is a prominent telecommunications company with roots in the ever blossoming telecom sector of Singapore.
                 We aim to deliver our customers with an array of reasonable, convenient and user-friendly wireless services intending
                 to simplify and enhance the lives of people. We are equally an entity possessing satisfactory skills in the field of call aggregation.<br><br>
-                
+
                 It would be an honor for FoneBox to be able to do business with an esteemed company such as you. At the mentioned venues, 
                 we will have arranged for an exhibition booth, a bilateral table and a meeting room to help facilitate any meets that might 
                 be held between us. We are hoping that we will get the same support from you as we continue to receive it from others. <br><br>
-                
+
                 Your esteemed presence is what we look forward to. We hope to enjoy more fruitful business deals and a great association with
                 you in the days ahead. If you have any questions regarding this meeting, you can reach us easily at +65 6702 4466<br><br>
-            
+
                 Thank you for your time, and we hope to see you at the meeting.<br><br>
                 Cordially,<br>
                 <span style="font-weight: bold;">FoneBox Team</span>

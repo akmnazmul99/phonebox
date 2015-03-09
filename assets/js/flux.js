@@ -183,7 +183,6 @@ window.flux = {
             var _this = this;
             this.playing = true;
             this.interval = setInterval(function() {
-                console.log('play');
                 _this.transition();
             }, this.options.delay);
         },
@@ -200,11 +199,13 @@ window.flux = {
             opts = opts || {};
             opts.direction = 'left';
             this.showImage(this.currentImageIndex + 1, trans, opts);
+            this.changeIndicator(this.currentImageIndex);
         },
         prev: function(trans, opts) {
             opts = opts || {};
             opts.direction = 'right';
             this.showImage(this.currentImageIndex - 1, trans, opts);
+            this.changeIndicator(this.currentImageIndex);
         },
         showImage: function(index, trans, opts) {
             this.setNextIndex(index);
@@ -212,9 +213,21 @@ window.flux = {
             // Temporarily stop the transition interval
             //clearInterval(this.interval);
             //this.interval = null;
-
             this.setupImages();
             this.transition(trans, opts);
+        },
+        changeIndicator: function(index){
+            //console.log($("#slider .carousel-indicators"));
+            var counter = 0;
+            $("#slider .carousel-indicators li").each(function(){
+                $(this).removeClass("active");
+            });
+            $("#slider .carousel-indicators li").each(function(){
+                if(counter == index){
+                    $(this).addClass("active");
+                }
+                counter ++;
+            });
         },
         finishedLoading: function() {
             var _this = this;
@@ -777,7 +790,7 @@ window.flux = {
 (function($) {
     flux.transitions.bars = function(fluxslider, opts) {
         return new flux.transition_grid(fluxslider, $.extend({
-            columns: 10,
+            columns: 25,
             rows: 1,
             delayBetweenBars: 40,
             renderTile: function(elem, colIndex, rowIndex, colWidth, rowHeight, leftOffset, topOffset) {

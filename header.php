@@ -30,12 +30,24 @@
             });
         });
     </script>
+    <script>
+    var num = 50; //number of pixels before modifying styles
+
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > num) {
+        $('.menu').addClass('fixed');
+    } else {
+        $('.menu').removeClass('fixed');
+    }
+});
+    </script>
     </head>
 
     <body class="page-sub-page page-microsite">
         <!-- Header -->
         <div class="navigation-wrapper">
-            <div class="branding">
+            <div class="fixed_header">
+            <div class="branding ">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3 col-xs-12">
@@ -56,6 +68,8 @@
                     </div>
                 </div>
             </div>
+            </div>
+            <div class="Padding_top"></div>
             <div class="primary-navigation-wrapper">
                 <header class="navbar" id="top" role="banner">
                     <div class="container">
