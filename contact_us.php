@@ -218,7 +218,7 @@
                             <br><br>
                             <abbr title="Telephone" style="color: black;">Telephone:</abbr> +65 6702 4466
                             <br>
-                            <abbr title="Email">Email:</abbr> <a href="#">ask@fonebox.com.sg</a>
+                            <abbr title="Email">Email:</abbr> <a href="">ask@fonebox.com.sg</a>
                         </div>
                     </address>
                 </div>

@@ -35,7 +35,7 @@ window.flux = {
         this.options = $.extend({
             autoplay: true,
             transitions: this.transitions,
-            delay: 4000,
+            delay: 8000,
             pagination: true,
             controls: false,
             captions: false,
@@ -710,7 +710,7 @@ window.flux = {
                         colAddPerLoop = Math.ceil(colRemainder / this.options.columns),
                         rowRemainder = imgHeight - (this.options.rows * rowHeight),
                         rowAddPerLoop = Math.ceil(rowRemainder / this.options.rows),
-                        delayBetweenBars = 150,
+                        delayBetweenBars = 800,
                         height = this.slider.image1.height(),
                         totalLeft = 0,
                         totalTop = 0,
@@ -792,7 +792,7 @@ window.flux = {
         return new flux.transition_grid(fluxslider, $.extend({
             columns: 25,
             rows: 1,
-            delayBetweenBars: 60,
+            delayBetweenBars: 80,
             renderTile: function(elem, colIndex, rowIndex, colWidth, rowHeight, leftOffset, topOffset) {
                 $(elem).css({
                     'background-image': this.slider.image1.css('background-image'),
@@ -800,7 +800,7 @@ window.flux = {
                     'background-repeat':'no-repeat',
                     'background-size': window.innerWidth +'px 100%'
                 }).css3({
-                    'transition-duration': '600ms',
+                    'transition-duration': '800ms',
                     'transition-timing-function': 'ease-in',
                     'transition-property': 'all',
                     'transition-delay': (colIndex * this.options.delayBetweenBars) + 'ms'

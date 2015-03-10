@@ -1,20 +1,14 @@
 <?php require_once('header.php'); ?>
 
 <div id="page-content">
-    <div  id="slider" style="position: relative;" class="carousel slide" data-ride="carousel" data-interval="4000">
+    <div  id="slider" style="position: relative;" class="slider" data-ride="carousel" data-interval="8000">
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
                    <img src="assets/img/slide-1.jpg" alt="" class="img-responsive "/>
-                   <span style="color: red;">Nazmul</span>
                 </div>
                 <div class="item">
                      <img src="assets/img/slide-2.jpg" alt="" class="img-responsive" />
-                     <span style="color: green;">Islam</span>
-                </div>
-                <div class="item">
-                    <img src="assets/img/slide-3.jpg" alt="" class="img-responsive" />
-                     <span style="color: yellow;">Khan</span>
                 </div>
             </div>
     <!-- Controls -->
@@ -34,7 +28,6 @@
             <ol class="carousel-indicators carousel-middle-indicators">
                 <li data-target="#slider" data-slide-to="0" class="active"></li>
                 <li data-target="#slider" data-slide-to="1"></li>
-                <li data-target="#slider" data-slide-to="2"></li>
             </ol>
     </div>
     <!-- Content -->
@@ -438,8 +431,12 @@
     }
 </script>
 <script>
-    $(function(){
-    $('#slider .item').each(function(){
+                
+                 $(function(){
+                      $('.slider').carousel({
+                interval: 8000!imporant;
+                });
+                 $('#slider .item').each(function(){
                 var next = $(this).next();
                 if (!next.length) {
                   next = $(this).siblings(':first');
