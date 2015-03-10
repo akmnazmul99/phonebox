@@ -70,147 +70,222 @@
                                 with FoneBox, the efficient approach to human connection.
                             </p>
 
-                            <h2>Product's</h2>
-                            <p style="text-align: justify;">
+                            <h2>Products</h2>
+<!--                            <p style="text-align: justify;">
                                 FoneBox USA is the parent company of its two subsidiaries, Teleport Asia and JhiJhiTel.
-                            </p>
-                            <div class="row form-group"></div>
+                            </p>-->
+<!--                            <div class="row form-group"></div>
                             <p style="text-align: justify;">
                                 Teleport Asia is an international gateway company with satisfactory skills in the field
                                 of call aggregation. We are telecommunication providers with expertise in proffering the
                                 following services -
-                            </p>
+                            </p>-->
                             
                             
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Call aggregation</h3>
-                                        <figure class="date point"><i class="fa fa-arrow-right"></i></figure>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>A-Z Call Termination</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>A-Z Routing</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>A-Z SMS/ MMS Routing</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                            </div><!-- /.row -->
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Route trading</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Wholesale Clearing House</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Direct route sell</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Route exchange</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div>
-                                </div>
-                            </div>
-
-
                             <div class="row form-group"></div>
-                            <p style="text-align: justify;">
-                                JhiJhi Tel is a premium service provider that is driven by the urge to be
-                                innovative and pledges to bring you an excellent voice experience around the
-                                world. JhiJhitel offers to its customer base the following services -
-                            </p>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Pinless calling card</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>MVNO</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                            </div><!-- /.row -->
 
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>PC to Phone</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Web Phone</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                            </div><!-- /.row -->
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="switch switch_style">
+                                                <div class="universal-button framed">
+                                                    <h3>Call aggregation</h3>
+                                                    <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                                </div>
+                                                <div class="point_body hide">From world’s most prominent carriers and our calling card clients, we aggregating huge amount of traffic per day.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="switch switch_style">
+                                                <div class="universal-button framed">
+                                                    <h3>A-Z Routing</h3>
+                                                    <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                                </div>
+                                                <div class="point_body hide">Our A-Z destinations planned for network operators whose retail subscribers expect high quality service at competitive market rates.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="switch_style">
+                                                <div class="universal-button framed">
+                                                    <h3>Route trading</h3>
+                                                    <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                                </div>
+                                                <div class="point_body hide">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="switch switch_style">
+                                                <div class="universal-button framed">
+                                                    <h3>Direct route sell</h3>
+                                                    <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                                </div>
+                                                <div class="point_body hide">We provide absolute solution for operators whose retail subscribers demand for best quality and superior features (such as CLI) with reasonable market rates.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="switch switch_style">
+                                                <div class="universal-button framed">
+                                                    <h3>A-Z Call Termination</h3>
+                                                    <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                                </div>
+                                                <div class="point_body hide">Our A-Z destinations planned for network operators whose retail subscribers expect high quality service at competitive market rates.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="switch switch_style">
+                                                <div class="universal-button framed">
+                                                    <h3>A-Z SMS/ MMS Routing</h3>
+                                                    <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                                </div>
+                                                <div class="point_body hide">We provide solutions for A-Z Destinations SMS/MMS termination.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="switch switch_style">
+                                                <div class="universal-button framed">
+                                                    <h3>Wholesale Clearing House</h3>
+                                                    <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                                </div>
+                                                <div class="point_body hide">FoneBox USA. Pte Ltd would like to invite you to an organizational meeting held at the International Telecoms Week (ITW) from May 10-13, 2015
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="switch switch_style">
+                                                <div class="universal-button framed">
+                                                    <h3>Route exchange</h3>
+                                                    <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                                </div>
+                                                <div class="point_body hide">FoneBox USA. Pte Ltd would like to invite you to an organizational meeting held at the International Telecoms Week (ITW) from May 10-13, 2015
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <div class="row">
                                 <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Call Shop</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Callback</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                            </div><!-- /.row -->
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Dialer for Android platform</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                                <div class="col-md-6">
-                                    <div  class="universal-button framed">
-                                        <h3>Dialer for iOS platform</h3>
-                                        <figure class="date"><i class="fa fa-arrow-right"></i></figure>
-                                    </div><!-- /.universal-button -->
-                                </div><!-- /.col-md-6 -->
-                            </div><!-- /.row -->
-                        </div><!-- /.section-content -->
-                    </section><!-- /.main-content -->
-                </div><!-- /.col-md-6 -->
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="switch switch_style">
+                                                <div class="universal-button framed">
+                                                    <h3>Pinless calling card</h3>
+                                                    <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                                </div>
+                                                <div class="point_body hide">We committed to provide our clients noise-free, premium quality PIN-less calling services using our softphone at the most competitive rates.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="switch switch_style">
+                                                <div class="universal-button framed">
+                                                    <h3>PC to Phone</h3>
+                                                    <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                                </div>
+                                                <div class="point_body hide">We committed to provide our clients noise-free, premium quality PIN-less calling services using our softphone at the most competitive rates.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="switch_style">
+                                                <div class="universal-button framed">
+                                                    <h3>Call Shop</h3>
+                                                    <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                                </div>
+                                                <div class="point_body hide">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="switch switch_style">
+                                                <div class="universal-button framed">
+                                                    <h3>Dialer for Android platform</h3>
+                                                    <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                                </div>
+                                                <div class="point_body hide">We committed to provide our clients noise-free, premium quality PIN-less calling services using our softphone at the most competitive rates.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="switch_style">
+                                                <div class="universal-button framed">
+                                                    <h3>MVNO</h3>
+                                                    <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                                </div>
+                                                <div class="point_body hide">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="switch switch_style">
+                                                <div class="universal-button framed">
+                                                    <h3>Web Phone</h3>
+                                                    <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                                </div>
+                                                <div class="point_body hide">We committed to provide our clients noise-free, premium quality PIN-less calling services using our softphone at the most competitive rates.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="switch_style">
+                                                <div class="universal-button framed">
+                                                    <h3>Callback</h3>
+                                                    <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                                </div>
+                                                <div class="point_body hide">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="switch switch_style">
+                                                <div class="universal-button framed">
+                                                    <h3>Dialer for iOS platform</h3>
+                                                    <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                                                </div>
+                                                <div class="point_body hide">
+                                                    We committed to provide our clients noise-free, premium quality PIN-less calling services using our softphone at the most competitive rates.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+                </div>
 
                 <div class="col-md-3">
                     <section class="news-small" id="news-small">

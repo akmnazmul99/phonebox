@@ -53,25 +53,22 @@
                 </ol>
             </div>-->
     <!-- end Slider -->
-    <style type="text/css">
-        .image1{
-            height:100% !important;
-            width: 100% !important;
-        }
 
-        .carousel-control{
-            z-index: 200;
-        }
-        .carousel-indicators{
-            z-index: 200;
-        }
-    </style>
-
-    <div  id="slider" style="position: relative;">
-        <img src="assets/img/slide-1.jpg" alt="" class="img-responsive"/>
-        <img src="assets/img/slide-2.jpg" alt="" class="img-responsive" />
-
-
+    <div  id="slider" style="position: relative;" id="carousel-header" class="carousel slide" data-ride="carousel">
+        <div id="carousel-header" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                   <img src="assets/img/slide-1.jpg" alt="" class="img-responsive "/>
+                </div>
+                <div class="item">
+                     <img src="assets/img/slide-2.jpg" alt="" class="img-responsive" />
+                </div>
+                <div class="item">
+                    <img src="assets/img/slide-3.jpg" alt="" class="img-responsive" />
+                </div>
+            </div>
+    <!-- Controls -->
         <div class="carousel-control">
             <a  href="#carousel-header" role="button" data-slide="prev" onclick="window.f.prev()">
                 <span class="glyphicon tp-leftarrow" aria-hidden="true"></span>
@@ -84,10 +81,14 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-header" class="active"></li>
-            <li data-target="#carousel-header"></li>
-        </ol>
+            <!-- Indicators -->
+            <ol class="carousel-indicators carousel-middle-indicators">
+                <li data-target="#carousel-header" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-header" data-slide-to="1"></li>
+                <li data-target="#carousel-header" data-slide-to="2"></li>
+            </ol>
+        </div>
+        
     </div>
     <!-- Content -->
     <div class="block">
@@ -159,10 +160,10 @@
                                 with FoneBox, the efficient approach to human connection.
                             </p>
 
-                            <h2>Product's</h2>
-                            <p style="text-align: justify;">
+                            <h2>Products</h2>
+<!--                            <p style="text-align: justify;">
                                 FoneBox USA is the parent company of its two subsidiaries, Teleport Asia and JhiJhiTel.
-                            </p>
+                            </p>-->
                             <div class="row form-group"></div>
 
                             <div class="row">
@@ -488,6 +489,24 @@
     function open_modal_current_affair_3() {
         $('#modal_current_affair_3').modal('show');
     }
+</script>
+<script>
+    $('#carousel-header .item').each(function(){
+                var next = $(this).next();
+                if (!next.length) {
+                  next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+
+                for (var i = 0;i < 1; i++) {
+                  next = next.next();
+                  if (!next.length) {
+                      next = $(this).siblings(':first');
+                  }
+                  next.children(':first-child').clone().appendTo($(this));
+                }
+              });
+            });
 </script>
 
 

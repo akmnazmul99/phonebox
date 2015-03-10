@@ -118,10 +118,6 @@ $(window).bind('scroll', function () {
             
             <div class="Padding_top"></div>
             
-            
-            
-            
-            
 <!--            <div class="top_menu_container">
                 <div class="row">
                     <div class="col-md-3 col-xs-12">

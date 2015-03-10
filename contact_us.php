@@ -1,13 +1,17 @@
 <?php require_once('header.php'); ?>
 <script language="javascript">
     function contactform() {
-        if (document.contact_form.name.value == '') {
-
-            alert("Name is Mandatory.");
-            document.contact_form.name.focus();
+        if (document.contact_form.fname.value == '') {
+            alert("First name is Mandatory.");
+            document.contact_form.fname.focus();
             return false;
-        } else if (document.contact_form.email.value == '') {
-
+        }
+        else if (document.contact_form.lname.value == '') {
+            alert("Last name is Mandatory.");
+            document.contact_form.lname.focus();
+            return false;
+        }
+        else if (document.contact_form.email.value == '') {
             alert("Email is Mandatory.");
             document.contact_form.email.focus();
             return false;
@@ -52,8 +56,8 @@
                                 <div class="col-md-6">
                                     <div class="input-group">
                                         <div class="controls">
-                                            <label for="name">Password <span class="text_color_red">(required)</span></label>
-                                            <input type="password" placeholder="Password" name="name" id="password" required>
+                                            <label for="password">Password <span class="text_color_red"></span></label>
+                                            <input type="password" placeholder="Password " name="password" id="password">
                                         </div>
                                     </div>
                                 </div>
@@ -62,8 +66,8 @@
                                 <div class="col-md-4">
                                     <div class="input-group">
                                         <div class="controls">
-                                            <label for="company">Company Name <span class="text_color_red">(required)</span></label>
-                                            <input type="text" placeholder="Company Name" name="company" id="company" required>
+                                            <label for="company">Company Name <span class="text_color_red"></span></label>
+                                            <input type="text" placeholder="Company Name" name="company" id="company">
                                         </div>
                                     </div>
                                 </div>
@@ -88,21 +92,21 @@
                                 <div class="col-md-4">
                                     <div class="input-group">
                                         <div class="controls">
-                                            <label for="country">Country <span class="text_color_red">(required)</span></label>
-                                            <input type="text" placeholder="Country" name="country" id="country" required>
+                                            <label for="country">Country <span class="text_color_red"></span></label>
+                                            <input type="text" placeholder="Country" name="country" id="country">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="input-group">
                                         <div class="controls">
-                                            <label for="phone">Phone <span class="text_color_red">(required)</span></label>
+                                            <label for="phone">Phone <span class="text_color_red"></span></label>
                                             <div class="row">
                                                 <div class="col-md-3 col-xs-3">
                                                     <input id="country_code" type="text" placeholder="+1" style="width:50px;text-align:center;" name="country_code">
                                                 </div>
                                                 <div class="col-md-9 col-xs-9">
-                                                    <input type="text" placeholder="Phone" name="phone" id="phone" required>
+                                                    <input type="text" placeholder="Phone" name="phone" id="phone">
                                                 </div>
                                             </div>
                                         </div>
@@ -112,7 +116,7 @@
                                     <div class="input-group">
                                         <div class="controls">
                                             <label for="website">Website</label>
-                                            <input type="text" placeholder="Website" name="website" id="website" required>
+                                            <input type="text" placeholder="Website" name="website" id="website">
                                         </div>
                                     </div>
                                 </div>
@@ -126,7 +130,7 @@
                                 <div class="col-md-3">
                                     <div class="input-group">
                                         <div class="controls">
-                                            <label for="website">Company Type <span class="text_color_red">(required)</span></label>
+                                            <label for="company_type">Company Type <span class="text_color_red"></span></label>
                                         </div>
                                     </div>
                                     <ul class="li_dot_remote">
@@ -151,7 +155,7 @@
                                 <div class="col-md-3">
                                     <div class="input-group">
                                         <div class="controls">
-                                            <label for="website">Company Type <span class="text_color_red">(required)</span></label>
+                                            <label for="daily_revenue">Daily Revenue <span class="text_color_red"></span></label>
                                         </div>
                                     </div>
                                     <ul class="li_dot_remote">
@@ -176,7 +180,7 @@
                                 <div class="col-md-6">
                                     <div class="input-group">
                                         <div class="controls">
-                                            <label for="message">Brief Description</label>
+                                            <label for="message">Brief Description <span class="text_color_red">(required)</span></label>
                                             <textarea rows="5" cols="50" name="message" placeholder="Tell us about your company,clearArea(this, 'Tell us about your company, your core markets, and how we may help you.')" id="message" required></textarea>
                                         </div>
                                     </div>

@@ -792,7 +792,7 @@ window.flux = {
         return new flux.transition_grid(fluxslider, $.extend({
             columns: 25,
             rows: 1,
-            delayBetweenBars: 40,
+            delayBetweenBars: 60,
             renderTile: function(elem, colIndex, rowIndex, colWidth, rowHeight, leftOffset, topOffset) {
                 $(elem).css({
                     'background-image': this.slider.image1.css('background-image'),
@@ -800,7 +800,7 @@ window.flux = {
                     'background-repeat':'no-repeat',
                     'background-size': window.innerWidth +'px 100%'
                 }).css3({
-                    'transition-duration': '400ms',
+                    'transition-duration': '600ms',
                     'transition-timing-function': 'ease-in',
                     'transition-property': 'all',
                     'transition-delay': (colIndex * this.options.delayBetweenBars) + 'ms'
