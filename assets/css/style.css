@@ -4112,7 +4112,7 @@ input {
     z-index: 1200;
 }
 .carousel-indicators{
-    z-index: 1200;
+    z-index: 1200!important;
 }
 .carousel-middle-indicators{ 
     top: 330px;

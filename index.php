@@ -1,70 +1,20 @@
 <?php require_once('header.php'); ?>
 
 <div id="page-content">
-    <!-- Slider -->
-    <!--    <div id="carousel-header" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="assets/img/slide-1.jpg" alt="slide 1" class="img-responsive" style="width: 100%">
-                    </div>
-                    <div class="item">
-                        <img src="assets/img/slide-2.jpg" alt="slide 2" class="img-responsive"  style="width: 100%">
-                    </div>
-                </div>
-        
-                <style type="text/css">
-                    .tp-leftarrow											
-                    {	
-                        z-index:100;
-                        cursor:pointer; 
-                        position:absolute;	
-                        background:url(assets/img/large_left.png) no-repeat top left;	
-                        width:40px;	
-                        height:40px;   
-                        top: 50%;
-                    }
-                    .tp-rightarrow											
-                    {	
-                        z-index:100;
-                        cursor:pointer; 
-                        position:absolute;	
-                        background:url(assets/img/large_right.png) no-repeat top left;	
-                        width:40px;	
-                        height:40px;   
-                        top: 50%;  
-                    }
-        
-                </style>
-                <div class="carousel-control">
-                    <a  href="#carousel-header" role="button" data-slide="prev">
-                        <span class="glyphicon tp-leftarrow" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                </div>
-                <div class="carousel-control" style="left: auto; right: 0">
-                    <a href="#carousel-header" role="button" data-slide="next">
-                        <span class="glyphicon tp-rightarrow" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-header" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-header" data-slide-to="1"></li>
-                </ol>
-            </div>-->
-    <!-- end Slider -->
-
     <div  id="slider" style="position: relative;" class="carousel slide" data-ride="carousel" data-interval="4000">
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
                    <img src="assets/img/slide-1.jpg" alt="" class="img-responsive "/>
+                   <span style="color: red;">Nazmul</span>
                 </div>
                 <div class="item">
                      <img src="assets/img/slide-2.jpg" alt="" class="img-responsive" />
+                     <span style="color: green;">Islam</span>
                 </div>
                 <div class="item">
                     <img src="assets/img/slide-3.jpg" alt="" class="img-responsive" />
+                     <span style="color: yellow;">Khan</span>
                 </div>
             </div>
     <!-- Controls -->
