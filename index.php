@@ -54,8 +54,7 @@
             </div>-->
     <!-- end Slider -->
 
-    <div  id="slider" style="position: relative;" id="carousel-header" class="carousel slide" data-ride="carousel">
-        <div id="carousel-header" class="carousel slide" data-ride="carousel" data-interval="3000">
+    <div  id="slider" style="position: relative;" class="carousel slide" data-ride="carousel" data-interval="4000">
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
@@ -70,25 +69,23 @@
             </div>
     <!-- Controls -->
         <div class="carousel-control">
-            <a  href="#carousel-header" role="button" data-slide="prev" onclick="window.f.prev()">
+            <a  href="#slider" role="button" data-slide="prev" onclick="window.f.prev()">
                 <span class="glyphicon tp-leftarrow" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
         </div>
         <div class="carousel-control" style="left: auto; right: 0">
-            <a href="#carousel-header" role="button" data-slide="next" onclick="window.f.next()">
+            <a href="#slider" role="button" data-slide="next" onclick="window.f.next()">
                 <span class="glyphicon tp-rightarrow" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
         </div>
             <!-- Indicators -->
             <ol class="carousel-indicators carousel-middle-indicators">
-                <li data-target="#carousel-header" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-header" data-slide-to="1"></li>
-                <li data-target="#carousel-header" data-slide-to="2"></li>
+                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                <li data-target="#slider" data-slide-to="1"></li>
+                <li data-target="#slider" data-slide-to="2"></li>
             </ol>
-        </div>
-        
     </div>
     <!-- Content -->
     <div class="block">
@@ -491,7 +488,8 @@
     }
 </script>
 <script>
-    $('#carousel-header .item').each(function(){
+    $(function(){
+    $('#slider .item').each(function(){
                 var next = $(this).next();
                 if (!next.length) {
                   next = $(this).siblings(':first');
@@ -507,6 +505,7 @@
                 }
               });
             });
+                
 </script>
 
 

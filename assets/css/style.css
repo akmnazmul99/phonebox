@@ -4107,19 +4107,13 @@ input {
     width: 100% !important;
 }
 
-.image_1_carousel{
-    position: relative;
-    z-index: 1000;
-    
-}
 
 .carousel-control{
-    z-index: 200;
+    z-index: 1200;
 }
 .carousel-indicators{
-    z-index: 200;
+    z-index: 1200;
 }
-
 .carousel-middle-indicators{ 
     top: 330px;
 }
@@ -4129,4 +4123,8 @@ input {
 .carousel-middle-indicators li.active{
     
     background-color: #FF4D4D;
+}
+
+.image_style{
+    
 }
