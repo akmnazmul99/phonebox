@@ -4079,7 +4079,7 @@ input {
 }
 
 .Padding_top {
-    padding-top: 95px!important;
+    padding-top: 90px!important;
 }
 
 .expand{
@@ -4109,10 +4109,10 @@ input {
 
 
 .carousel-control{
-    z-index: 1200;
+    z-index: 200;
 }
 .carousel-indicators{
-    z-index: 1200!important;
+    z-index: 200;
 }
 .carousel-middle-indicators{ 
     top: 330px;

@@ -109,7 +109,7 @@ $(window).bind('scroll', function () {
                         <div class="row">
                             <div class="col-md-offset-8 col-md-4 col-xs-12">
                                 &nbsp;
-                                <div class="text_color_black opacity-90 mt_no" style="margin-top: -15px;">Call Us:  <span class="opacity-70">+65 6702 4466</span></div>
+                                <div class="text_color_black opacity-90 mt_no" style="margin-top: -20px;">&nbsp;Call Us:  <span class="opacity-70">+65 6702 4466</span></div>
                             </div>
                         </div>
                     </div>
