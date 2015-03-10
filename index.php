@@ -1,7 +1,7 @@
 <?php require_once('header.php'); ?>
 
 <div id="page-content">
-    <div  id="slider" style="position: relative;" class="slider" data-ride="carousel" data-interval="8000">
+    <div  id="slider" style="position: relative;" class="carousel slide" data-ride="carousel" data-interval="8000">
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
@@ -431,12 +431,8 @@
     }
 </script>
 <script>
-                
-                 $(function(){
-                      $('.slider').carousel({
-                interval: 8000!imporant;
-                });
-                 $('#slider .item').each(function(){
+    $(function(){
+    $('#slider .item').each(function(){
                 var next = $(this).next();
                 if (!next.length) {
                   next = $(this).siblings(':first');
