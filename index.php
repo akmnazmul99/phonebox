@@ -1,31 +1,40 @@
 <?php require_once('header.php'); ?>
 
-
-
 <div id="page-content">
-
     <div  id="slider" style="position: relative;" class="carousel slide" data-ride="carousel" data-interval="8000">
-
-            <!-- Wrapper for slides -->
-
-            <div class="carousel-inner" role="listbox">
-
-                <div class="item active">
-
-                   <img src="assets/img/slide-1.jpg" alt="" class="img-responsive "/>
-
-                </div>
-
-                <div class="item">
-
-                     <img src="assets/img/slide-2.jpg" alt="" class="img-responsive" />
-
-                </div>
-
+    <div style="text-align: center; position: absolute; top: 0px; left: 0px; width: 1366px; height: 380px; background-repeat: no-repeat; background-size: 100% 100%; z-index: 201; cursor: auto;visibility: hidden;">
+        <h1 class="row" id="image1-first">
+            <ul class="texts">
+                <li data-out-effect="rollIn" data-out-shuffle="true">HIGH</li> 
+            </ul>
+        </h1><br/>
+        <h1 class="row" id="image1-second">
+            <ul class="texts">
+                <li data-in-effect="rollIn">AVAILABILITY</li>   
+            </ul>
+        </h1><br/>
+        <h1 class="row" id="image1-third">
+            <ul class="texts">
+                <li data-in-effect="rollIn">WITH UPTO <span style="color: #63266C!important; font-size: 36px;">99.99% UPTIME</span></li>   
+            </ul>
+    </h1>
+        <br/>
+        <h4 class="row" id="image1-four" style="padding: 0 100px; color: #fff; font-size: 18px; text-align: center;">
+            <ul class="texts">    
+            <li data-speed="10">FoneBox USA Pte. Ltd. is an international voice wholesale and a-z termination company has taken a new entrance in the ever blossoming telecom sector of Singapore. </span></li>   
+          </ul>
+        </h4><br/>
+    </div>
+        
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="assets/img/slide-1.jpg" alt="" class="img-responsive "/>
             </div>
 
-    <!-- Controls -->
-
+            <div class="item">
+                <img src="assets/img/slide-2.jpg" alt="" class="img-responsive" />
+            </div>
+        </div>
         <div class="carousel-control">
 
             <a  href="#slider" role="button" data-slide="prev" onclick="window.f.prev()">
@@ -50,18 +59,11 @@
 
         </div>
 
-            <!-- Indicators -->
-
-            <ol class="carousel-indicators carousel-middle-indicators">
-
-                <li data-target="#slider" data-slide-to="0" class="active"></li>
-
-                <li data-target="#slider" data-slide-to="1"></li>
-
-            </ol>
-
+        <ol class="carousel-indicators carousel-middle-indicators">
+            <li data-target="#slider" data-slide-to="0" class="active"></li>
+            <li data-target="#slider" data-slide-to="1"></li>
+        </ol>
     </div>
-
     <!-- Content -->
 
     <div class="block">
@@ -700,7 +702,7 @@
 
         window.f = new flux.slider('#slider', {
 
-            autoplay: true,
+            autoplay: false,
 
             pagination: false
 
@@ -865,7 +867,20 @@
 <script>
 
     $(function(){
-
+     var image1FirstAnim = $('#image1-four').textillate({minDisplayTime: 6000});
+     var image1SecondAnim = $('#image1-first').textillate({minDisplayTime: 2000, initialDelay: 1000});
+     var image2FirstAnim = $('#image1-second').textillate({minDisplayTime: 2000, initialDelay: 2000});
+     var image2FirstAnim = $('#image1-third').textillate({minDisplayTime: 2000, initialDelay: 3000});
+     
+        
+    $(image1SecondAnim).on('inAnimationEnd.tlt', function(){
+        $('#image1-first').textillate('out');
+        $('#image1-four').textillate('out');
+        $('#image1-second').textillate('out');
+        $('#image1-third').textillate('out');
+    });
+    //$('#image1-second').textillate({loop: true, minDisplayTime: 2000, initialDelay: 2000});
+    
     $('#slider .item').each(function(){
 
                 var next = $(this).next();

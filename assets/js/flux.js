@@ -38,7 +38,7 @@ window.flux = {
             delay: 8000,
             pagination: true,
             controls: false,
-            captions: false,
+            captions: true,
             width: null,
             height: null,
             onTransitionEnd: null
@@ -99,9 +99,10 @@ window.flux = {
         }
 
         // Create the placeholders for the current and next image
-        this.image1 = $('<div style="height: 100%; width: 100%" class="image1"></div>').appendTo(this.imageContainer);
-        this.image2 = $('<div class="image2" style="height: 100%; width: 100%"></div>').appendTo(this.imageContainer);
 
+        this.image1 = $('<div style="height: 100%; width: 100%" class="image1" id="image1"></div>').appendTo(this.imageContainer);
+        this.image2 = $('<div class="image2" style="height: 100%; width: 100%" id="image2"></div>').appendTo(this.imageContainer);
+ 
         $(this.image1).add(this.image2).css({
             'position': 'absolute',
             'top': '0px',
@@ -209,7 +210,6 @@ window.flux = {
         },
         showImage: function(index, trans, opts) {
             this.setNextIndex(index);
-
             // Temporarily stop the transition interval
             //clearInterval(this.interval);
             //this.interval = null;
